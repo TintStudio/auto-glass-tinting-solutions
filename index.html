@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 
-    <title>Auto glass tinting solutions
+    <title>Auto Galss Tinting Solution
     </title>
-    <link rel="canonical" href="https://tintstudio.github.io/auto-glass-tinting-solutions" />
+    <link rel="canonical" href="https://tintstudio.github.io/auto-glass-tinting-solutions/" />
       <meta name="robots" content="index">
-      <link rel="icon" href="logo.png" type="image/x-icon">
+      <link rel="icon" href="https://tintstudio.github.io/auto-glass-tinting-solutions/logo.png" type="image/x-icon">
      
   <script>
   (function(d,u) {
@@ -21,14 +21,13 @@
 </script>
   <style>
 :root {
-    --primary-color: #2c5e50; /* Pine Green */
-    --secondary-color: #88d18a; /* Mint Green */
-    --text-color: #35434a; /* Slate Gray */
-    --light-bg: #f5f8f4; /* Pale Mint */
+    --primary-color: #202124; /* Jet Black */
+    --secondary-color: #d4af37; /* Gold */
+    --text-color: #474747; /* Dim Gray */
+    --light-bg: #fafafa; /* Light Gray */
     --white: #ffffff; /* White */
-    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* Soft Shadow */
+    --shadow: 0 6px 8px -1px rgba(0, 0, 0, 0.2); /* Bold Shadow */
 }
-
 
 
 * {
@@ -61,6 +60,136 @@ a {
 section {
     padding: 5rem 0;
 }
+
+ /*Menu Section style*/
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 9rem;
+    background: #000000; /* Black background */
+    color: #ffffff; /* White text color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for separation */
+}
+
+.menu img {
+    max-width: 300px;
+    height: 150px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    position: relative;
+}
+
+.menu ul li {
+    margin: 0;
+    position: relative;
+    color: #000000;
+}
+
+.menu ul li a {
+    color: #ffffff; /* White color for text in the menu */
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.menu ul li a:hover {
+    color: #d4af37; /* Gold color on hover */
+}
+
+/* Submenu Style */
+.menu ul li ul {
+    display: none; /* Hide submenus by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff; /* White background for submenu */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.menu ul li:hover > ul {
+    display: block; /* Show submenu on hover */
+}
+
+.menu ul li ul li {
+    padding: 0.5rem 0;
+}
+
+/* Submenu text color (dark color for visibility) */
+.menu ul li ul li a {
+    color: #000000; /* Black text color for submenu */
+    font-weight: normal; /* Optional: Reset font weight */
+}
+
+.menu ul li ul li a:hover {
+    color: #d4af37; /* Gold color on hover in submenu */
+}
+
+/*Blog Section */
+
+.blog-section {
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .blog-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+
+        .blog-cards {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .blog-card {
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .blog-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .blog-card p {
+            font-size: 1rem;
+            color: #474747;
+            margin-bottom: 1rem;
+        }
+
+        .blog-card a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .blog-card a:hover {
+            color: #0056b3;
+        }
+
+
 .header {
     background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
     color: var(--white);
@@ -273,38 +402,59 @@ details p {
     padding-top: 2rem;
     border-top: 1px solid #374151;
 }
-.iframe-container {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 0;
-}
-iframe {
-    border: none !important;
-    width: 600px;
-    height: 500px;
-}
+
 
 </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <h1>Enhance Your Vehicle with Professional Auto Glass Tinting Solutions</h1>
+       <!-- Menu Section with White Background -->
+       <div class="menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#">Services</a>
+                <ul>
+                    <li><a href="#car-window-tinting">Car Window Tinting</a></li>
+                    <li><a href="#ceramic-coating">Ceramic Coating</a></li>
+                    <li><a href="#vinyl-wrapping">Vinyl Wrapping</a></li>
+                    <li><a href="#wheel-coating">Wheel Powder Coating</a></li>
+                    <li><a href="#paint-protection">Paint Protection Film</a></li>
+                </ul>
+            </li>
+        
+           
+        </ul>
+        <img src="https://tintstudio.github.io/auto-glass-tinting-solutions/logo.png" alt="Logo">
+        <ul>
+        
+            <li><a href="#blog">Blogs</a>
+                <ul>
+                    <li><a href="https://tintstudio.github.io/auto-glass-tinting-solutions/why-window-tinting-essential-drivers-waterford-twp">Why Window Tinting is Essential for Drivers in Waterford Township’s Climate</a></li>
+                    <li><a href="https://tintstudio.github.io/auto-glass-tinting-solutions/how-window-tinting-improves-driving-comfort-waterford-twp">How Window Tinting in Waterford Township Improves Driving Comfort</a></li>
+                    <li><a href="https://tintstudio.github.io/auto-glass-tinting-solutions/window-tinting-laws-michigan">Window Tinting Laws in Michigan</a></a></li>
+                  
+                
+                </ul>
+            </li>
 
-            <p>Transform your driving experience with 
-                <a href="https://prestigeprotectivefilm.com/">premium auto glass tinting</a>. This innovative solution provides increased comfort, privacy, and UV protection, ensuring a safer and more stylish ride for you and your passengers. With advancements in technology, auto glass tinting has evolved into a sophisticated process that offers a blend of aesthetics and functionality, enhancing both the appearance and performance of your vehicle.</p>
+            <li><a href="https://tintstudio.github.io/auto-glass-tinting-solutions/about-us">About Us</a></li>
+            <li><a href="https://tintstudio.github.io/auto-glass-tinting-solutions/contact-us">Contact</a></li>
+        </ul>
+        
+    </div>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+        <h1>Enhance Your Vehicle with Professional Auto Glass Tinting Solutions</h1>
 
-            <a href="tel:(248) 230-8858" class="cta-button">
-                <i data-lucide="phone"></i>
-                Call Now: (248) 230-8858
-            </a>
-        </div>
-    </header>
+        <p>Transform your driving experience with 
+            <a href="https://prestigeprotectivefilm.com/">premium auto glass tinting</a>. This innovative solution provides increased comfort, privacy, and UV protection, ensuring a safer and more stylish ride for you and your passengers. With advancements in technology, auto glass tinting has evolved into a sophisticated process that offers a blend of aesthetics and functionality, enhancing both the appearance and performance of your vehicle.</p>
 
+        <a href="tel:(248) 230-8858" class="cta-button">
+            <i data-lucide="phone"></i>
+            Call Now: (248) 230-8858
+        </a>
+    </div>
+</header>
     <!-- Table of Contents -->
     <nav class="table-of-contents">
         <div class="container">
@@ -384,243 +534,263 @@ iframe {
         </div>
 
         </section>
-    <!-- Additional Subheadings -->
-    <section id="additional-info" class="additional-info">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Why Choose Professional Window Tinting in Waterford Township?
-                        <h2>What Is Auto Glass Tinting and How Does It Work?</h2>
+   <!-- Additional Subheadings -->
+   <section id="additional-info" class="additional-info">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Why Choose Professional Window Tinting in Waterford Township?
+                    <h2>What Is Auto Glass Tinting and How Does It Work?</h2>
 
-                        <p><a href="https://sites.google.com/view/autoprotectionwaterfordtown/home">Auto glass tinting</a> involves applying a thin, specialized film to the windows of a vehicle. This film is designed to reduce heat, block harmful UV rays, and enhance privacy. Utilizing advanced adhesive and film technologies, the tint is applied seamlessly to create a durable and aesthetically pleasing finish.</p>
-                        
-                        <ul>
-                            <li><strong>Heat Reduction:</strong> Tinted windows can significantly reduce the amount of heat entering the vehicle, enhancing comfort during hot weather. This feature not only improves the driving experience but also reduces wear and tear on your vehicle’s air conditioning system.</li>
-                            <li><strong>UV Protection:</strong> High-quality films block up to 99% of UV rays, protecting passengers and the car's interior from harmful sun exposure. Over time, this protection helps maintain the integrity of your vehicle's upholstery, dashboard, and other interior components.</li>
-                            <li><strong>Improved Privacy:</strong> Tinting provides an added layer of privacy by limiting visibility from the outside without compromising your view from within. This ensures a more secure and comfortable driving environment.</li>
-                        </ul>
-                        
-                        <p>Auto glass tinting employs cutting-edge technology, combining precision and innovation to achieve a flawless finish. The adhesive layer bonds the film to the glass, while the protective layer ensures longevity and resistance to scratches or peeling.</p>
-                        
-            <br>
+                    <p><a href="https://sites.google.com/view/autoprotectionwaterfordtown/home">Auto glass tinting</a> involves applying a thin, specialized film to the windows of a vehicle. This film is designed to reduce heat, block harmful UV rays, and enhance privacy. Utilizing advanced adhesive and film technologies, the tint is applied seamlessly to create a durable and aesthetically pleasing finish.</p>
+                    
+                    <ul>
+                        <li><strong>Heat Reduction:</strong> Tinted windows can significantly reduce the amount of heat entering the vehicle, enhancing comfort during hot weather. This feature not only improves the driving experience but also reduces wear and tear on your vehicle’s air conditioning system.</li>
+                        <li><strong>UV Protection:</strong> High-quality films block up to 99% of UV rays, protecting passengers and the car's interior from harmful sun exposure. Over time, this protection helps maintain the integrity of your vehicle's upholstery, dashboard, and other interior components.</li>
+                        <li><strong>Improved Privacy:</strong> Tinting provides an added layer of privacy by limiting visibility from the outside without compromising your view from within. This ensures a more secure and comfortable driving environment.</li>
+                    </ul>
+                    
+                    <p>Auto glass tinting employs cutting-edge technology, combining precision and innovation to achieve a flawless finish. The adhesive layer bonds the film to the glass, while the protective layer ensures longevity and resistance to scratches or peeling.</p>
+                    
+        <br>
 
 
-                   
-                </div>
-
-                <div >
-            
-                    <iframe src="https://prestigeprotectivefilm.com/wp-content/uploads/2024/10/SON0382-768x512.jpg" width="500" height="600">
-                        Car Window Tinting Waterford Township
-                    </iframe>
-                    
-                    
-                    
-                    
-                    
-                </div>
+               
             </div>
-            <br>      <br>
-            <div class="about-content">
-                <div class="about-image">
-                    <iframe src=https://prestigeprotectivefilm.com/wp-content/uploads/2024/04/SON0332-2-768x512.jpeg.webp" width="500" height="600">
-                        Car Window Tinting Waterford Township
 
-                    </iframe>
-                    
-                    
-                    
-                </div>
-                <div class="about-text">
-                    <h2>Benefits of Auto Glass Tinting for Your Vehicle</h2>
-
-                    <p>Auto glass tinting offers more than just aesthetic improvements; it delivers functional advantages that elevate your driving experience.</p>
-                    
-                    <ul>
-                        <li><strong>Enhanced Comfort:</strong> By minimizing solar heat, tinted windows help maintain a cooler interior, reducing reliance on air conditioning and improving fuel efficiency. This translates to significant cost savings over time, especially during the summer months.</li>
-                        <li><strong>Increased Safety:</strong> The film reinforces the glass, making it less likely to shatter upon impact and providing an added layer of protection during accidents. This feature is particularly valuable for families and individuals prioritizing safety.</li>
-                        <li><strong>Customizable Options:</strong> With a range of shades and styles, tinting can be tailored to match your personal preferences and vehicle’s design. Whether you prefer a subtle enhancement or a bold, dramatic look, there are options to suit every taste.</li>
-                    </ul>
-                    
-                    <p>Additionally, auto glass tinting can reduce glare from sunlight or headlights, improving visibility and reducing eye strain. This benefit is especially advantageous for long drives or night-time driving.</p>
-                    
-                    
-                </div>
-            </div>
-        </div> </section>      <br>
-     
-    <br>
-        <section id="additional-info" class="additional-info"> <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Why Choose Our Auto Glass Tinting Solutions?</h2>
-
-                    <p>Our team of experts delivers exceptional tinting services, leveraging cutting-edge technology and high-performance films to meet your specific needs.</p>
-                    
-                    <ul>
-                        <li><strong>Professional Installation:</strong> Our skilled technicians ensure precise application for a flawless and long-lasting finish. Their expertise guarantees that every detail is meticulously attended to, from surface preparation to the final inspection.</li>
-                        <li><strong>Top-Tier Materials:</strong> We use only premium-grade films that meet industry standards for durability and performance. These films are rigorously tested to withstand extreme temperatures, UV exposure, and daily wear.</li>
-                        <li><strong>Customer Satisfaction:</strong> From consultation to installation, we prioritize your satisfaction, offering personalized solutions that align with your goals. Our team works closely with you to ensure the final result exceeds expectations.</li>
-                    </ul>
-                    
-                    <p>With years of experience in the industry, we have honed our processes to deliver consistent, high-quality outcomes. Our commitment to excellence has earned us a reputation for reliability and professionalism.</p>
-                    
-                    
-
-                    <br>
-
-                </div>
-                <div class="about-image">
-                    <iframe src="https://prestigeprotectivefilm.com/wp-content/uploads/2024/10/SON9919-4-768x512.jpg" width="500" height="600">
-                        Car Window Tinting Waterford Township
-                    </iframe>
-                    
-                    
-                    
-                </div>
-            </div><br>      <br>
-            <div class="about-content">
-                <div class="about-image">
-                    <iframe src="https://prestigeprotectivefilm.com/wp-content/uploads/2024/10/SON0139-3-768x512.jpg" width="500" height="600">
-                        Car Window Tinting Waterford Township
-
-                    </iframe>
-                    
-                    
-                    
-                </div>
-                <div class="about-text">
-                    <h2>Maintaining Your Tinted Windows</h2>
-
-                    <p>Proper care and maintenance of your tinted windows are essential for preserving their appearance and functionality.</p>
-                    
-                    <ul>
-                        <li><strong>Cleaning Tips:</strong> Use a soft cloth and a non-ammonia cleaner to gently wipe the surface, avoiding abrasive materials that could damage the film. Regular cleaning prevents dirt buildup and maintains the film’s clarity and finish.</li>
-                        <li><strong>Avoid Rolling Down Windows Initially:</strong> Allow the film to cure fully by keeping windows rolled up for at least 3–5 days after installation. This ensures a secure bond between the film and the glass.</li>
-                        <li><strong>Regular Inspections:</strong> Periodically check for any signs of peeling or bubbling, and address issues promptly to maintain optimal performance. Proactive maintenance can extend the life of your tint and keep it looking pristine.</li>
-                    </ul>
-                    
-                    <p>For added protection, consider applying a specialized window film protectant. This product enhances the durability of the tint, shielding it from everyday wear and tear.</p>
-                    
-                    
-<br>
-<br>
-                    
-
-                  
-                </div>
+            <div >
+        
+                <iframe src="https://prestigeprotectivefilm.com/wp-content/uploads/2024/10/SON0382-768x512.jpg" width="500" height="600">
+                    Car Window Tinting Waterford Township
+                </iframe>
+                
+                
+                
+                
+                
             </div>
         </div>
-    </section>
+        <br>      <br>
+        <div class="about-content">
+            <div class="about-image">
+                <iframe src="https://prestigeprotectivefilm.com/wp-content/uploads/2024/04/SON0332-2-768x512.jpeg.webp" width="500" height="600">
+                    Car Window Tinting Waterford Township
 
+                </iframe>
+                
+                
+                
+            </div>
+            <div class="about-text">
+                <h2>Benefits of Auto Glass Tinting for Your Vehicle</h2>
 
+                <p>Auto glass tinting offers more than just aesthetic improvements; it delivers functional advantages that elevate your driving experience.</p>
+                
+                <ul>
+                    <li><strong>Enhanced Comfort:</strong> By minimizing solar heat, tinted windows help maintain a cooler interior, reducing reliance on air conditioning and improving fuel efficiency. This translates to significant cost savings over time, especially during the summer months.</li>
+                    <li><strong>Increased Safety:</strong> The film reinforces the glass, making it less likely to shatter upon impact and providing an added layer of protection during accidents. This feature is particularly valuable for families and individuals prioritizing safety.</li>
+                    <li><strong>Customizable Options:</strong> With a range of shades and styles, tinting can be tailored to match your personal preferences and vehicle’s design. Whether you prefer a subtle enhancement or a bold, dramatic look, there are options to suit every taste.</li>
+                </ul>
+                
+                <p>Additionally, auto glass tinting can reduce glare from sunlight or headlights, improving visibility and reducing eye strain. This benefit is especially advantageous for long drives or night-time driving.</p>
+                
+                
+            </div>
+        </div>
+    </div> </section>      <br>
+ 
+<br>
+    <section id="additional-info" class="additional-info"> <div class="container">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Why Choose Our Auto Glass Tinting Solutions?</h2>
 
-   
+                <p>Our team of experts delivers exceptional tinting services, leveraging cutting-edge technology and high-performance films to meet your specific needs.</p>
+                
+                <ul>
+                    <li><strong>Professional Installation:</strong> Our skilled technicians ensure precise application for a flawless and long-lasting finish. Their expertise guarantees that every detail is meticulously attended to, from surface preparation to the final inspection.</li>
+                    <li><strong>Top-Tier Materials:</strong> We use only premium-grade films that meet industry standards for durability and performance. These films are rigorously tested to withstand extreme temperatures, UV exposure, and daily wear.</li>
+                    <li><strong>Customer Satisfaction:</strong> From consultation to installation, we prioritize your satisfaction, offering personalized solutions that align with your goals. Our team works closely with you to ensure the final result exceeds expectations.</li>
+                </ul>
+                
+                <p>With years of experience in the industry, we have honed our processes to deliver consistent, high-quality outcomes. Our commitment to excellence has earned us a reputation for reliability and professionalism.</p>
+                
+                
 
-    <!-- FAQ -->
-    <section id="faq" class="faq">
-        <div class="container">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-list">
+                <br>
+
+            </div>
+            <div class="about-image">
+                <iframe src="https://prestigeprotectivefilm.com/wp-content/uploads/2024/10/SON9919-4-768x512.jpg" width="500" height="600">
+                    Car Window Tinting Waterford Township
+                </iframe>
+                
+                
+                
+            </div>
+        </div><br>      <br>
+        <div class="about-content">
+            <div class="about-image">
+                <iframe src="https://prestigeprotectivefilm.com/wp-content/uploads/2024/10/SON0139-3-768x512.jpg" width="500" height="600">
+                    Car Window Tinting Waterford Township
+
+                </iframe>
+                
+                
+                
+            </div>
+            <div class="about-text">
+                <h2>Maintaining Your Tinted Windows</h2>
+
+                <p>Proper care and maintenance of your tinted windows are essential for preserving their appearance and functionality.</p>
+                
+                <ul>
+                    <li><strong>Cleaning Tips:</strong> Use a soft cloth and a non-ammonia cleaner to gently wipe the surface, avoiding abrasive materials that could damage the film. Regular cleaning prevents dirt buildup and maintains the film’s clarity and finish.</li>
+                    <li><strong>Avoid Rolling Down Windows Initially:</strong> Allow the film to cure fully by keeping windows rolled up for at least 3–5 days after installation. This ensures a secure bond between the film and the glass.</li>
+                    <li><strong>Regular Inspections:</strong> Periodically check for any signs of peeling or bubbling, and address issues promptly to maintain optimal performance. Proactive maintenance can extend the life of your tint and keep it looking pristine.</li>
+                </ul>
+                
+                <p>For added protection, consider applying a specialized window film protectant. This product enhances the durability of the tint, shielding it from everyday wear and tear.</p>
+                
+                
+<br>
+<br>
+                
+
               
-                <details>
-                    <summary>What types of tint films do you offer?</summary>
-                    <p>We provide a range of options, including dyed, metallic, ceramic, and hybrid films, each tailored to different needs and preferences. Our experts can guide you in selecting the best film for your vehicle.</p>
-                  </details>
-                  
-                  <details>
-                    <summary>Is auto glass tinting legal?</summary>
-                    <p>Yes, we comply with local regulations to ensure your tint meets the legal standards for visible light transmission (VLT). Our team stays updated on the latest guidelines to provide you with compliant solutions.</p>
-                  </details>
-                  
-                  <details>
-                    <summary>How long does the tinting process take?</summary>
-                    <p>Most installations are completed within 2–3 hours, depending on the size and complexity of your vehicle’s windows. Larger or more intricate vehicles may require additional time.</p>
-                  </details>
-                  
-                  <details>
-                    <summary>Will tinting affect my visibility?</summary>
-                    <p>No, high-quality films are designed to enhance visibility by reducing glare without obstructing your view. In fact, many drivers find tinted windows improve clarity and comfort.</p>
-                  </details>
-                  
-                  <details>
-                    <summary>Can the tint be removed?</summary>
-                    <p>Yes, the film can be professionally removed without damaging the glass, allowing for upgrades or changes as needed. This flexibility ensures your investment is adaptable over time.</p>
-                  </details>
-                  
-                  <details>
-                    <summary>Does tinting reduce interior fading?</summary>
-                    <p>Absolutely, by blocking UV rays, tinting helps preserve your vehicle’s upholstery and dashboard from sun damage. This protection prolongs the lifespan of your car’s interior.</p>
-                  </details>
-                  
-                  <details>
-                    <summary>How durable is the tint film?</summary>
-                    <p>Our premium films are designed to last for years, resisting peeling, bubbling, and discoloration under normal conditions. With proper care, they maintain their performance and appearance.</p>
-                  </details>
-                  
-                  <details>
-                    <summary>What warranty do you offer?</summary>
-                    <p>We provide a comprehensive warranty covering materials and installation, ensuring your investment is protected. Our warranty reflects our confidence in the quality and durability of our products.</p>
-                  </details>
-                  
-                  <details>
-                    <summary>Can tinted windows improve fuel efficiency?</summary>
-                    <p>Yes, by reducing interior heat and minimizing air conditioning usage, tinted windows can contribute to improved fuel efficiency, particularly during hot weather.</p>
-                  </details>
-                  
-                  <details>
-                    <summary>Are there any additional benefits to tinting?</summary>
-                    <p>Beyond comfort and aesthetics, tinted windows offer added security by making it harder for potential thieves to see inside your vehicle. This deterrent adds peace of mind wherever you park.</p>
-                  </details>
-                  
             </div>
         </div>
-    </section>
-<!-- Map Embed -->
-<section id="map" class="map" >
-    <div class="" id="location" align="center">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11740.29093523314!2d-83.334891!3d42.638618!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824dd93cd6243c9%3A0x87e737c00c3875b7!2sPrestige%20Protective%20Films!5e0!3m2!1sen!2sus!4v1735836512912!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Car-window-</iframe>
-        
-        
-        
     </div>
 </section>
 
+
+
+
+
+<!-- FAQ -->
+<section id="faq" class="faq">
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-list">
+          
+            <details>
+                <summary>What types of tint films do you offer?</summary>
+                <p>We provide a range of options, including dyed, metallic, ceramic, and hybrid films, each tailored to different needs and preferences. Our experts can guide you in selecting the best film for your vehicle.</p>
+              </details>
+              
+              <details>
+                <summary>Is auto glass tinting legal?</summary>
+                <p>Yes, we comply with local regulations to ensure your tint meets the legal standards for visible light transmission (VLT). Our team stays updated on the latest guidelines to provide you with compliant solutions.</p>
+              </details>
+              
+              <details>
+                <summary>How long does the tinting process take?</summary>
+                <p>Most installations are completed within 2–3 hours, depending on the size and complexity of your vehicle’s windows. Larger or more intricate vehicles may require additional time.</p>
+              </details>
+              
+              <details>
+                <summary>Will tinting affect my visibility?</summary>
+                <p>No, high-quality films are designed to enhance visibility by reducing glare without obstructing your view. In fact, many drivers find tinted windows improve clarity and comfort.</p>
+              </details>
+              
+              <details>
+                <summary>Can the tint be removed?</summary>
+                <p>Yes, the film can be professionally removed without damaging the glass, allowing for upgrades or changes as needed. This flexibility ensures your investment is adaptable over time.</p>
+              </details>
+              
+              <details>
+                <summary>Does tinting reduce interior fading?</summary>
+                <p>Absolutely, by blocking UV rays, tinting helps preserve your vehicle’s upholstery and dashboard from sun damage. This protection prolongs the lifespan of your car’s interior.</p>
+              </details>
+              
+              <details>
+                <summary>How durable is the tint film?</summary>
+                <p>Our premium films are designed to last for years, resisting peeling, bubbling, and discoloration under normal conditions. With proper care, they maintain their performance and appearance.</p>
+              </details>
+              
+              <details>
+                <summary>What warranty do you offer?</summary>
+                <p>We provide a comprehensive warranty covering materials and installation, ensuring your investment is protected. Our warranty reflects our confidence in the quality and durability of our products.</p>
+              </details>
+              
+              <details>
+                <summary>Can tinted windows improve fuel efficiency?</summary>
+                <p>Yes, by reducing interior heat and minimizing air conditioning usage, tinted windows can contribute to improved fuel efficiency, particularly during hot weather.</p>
+              </details>
+              
+              <details>
+                <summary>Are there any additional benefits to tinting?</summary>
+                <p>Beyond comfort and aesthetics, tinted windows offer added security by making it harder for potential thieves to see inside your vehicle. This deterrent adds peace of mind wherever you park.</p>
+              </details>
+              
+        </div>
+    </div>
+</section>
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="contact-info">
                     <h3>Contact Us</h3>
-                    <p><i data-lucide="map-pin"></i>2489 Elizabeth Lake Road #100, Waterford Township, Michigan 48328</p>
-                    <p><i data-lucide="phone"></i> (248) 230-8858</p>
-                   
+                    <p>2489 Elizabeth Lake Road #100, Waterford Township, Michigan 48328</p>
+                    <p> (248) 230-8858</p>
+                    <br>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/prestigeprotectivefilm/">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@fahadhalig">
+                            <i data-lucide="youtube"></i>
+                        </a>
+                        <a href="#">
+                            <i data-lucide="facebook"></i>
+                        </a>
+                    
+                        <a href="#">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                    </div>
                 </div>
+
                 <div class="quick-links">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="https://ceramic-protection-waterfordtownship.netlify.app">Car ceramic coating solutions</a></li>
+                        <li><a href="https://tintstudio.github.io/auto-glass-tinting-solutions/sitemap.xml">Site Map</a></li>
+                        <li><a href="https://tintstudio.github.io/auto-glass-tinting-solutions/about-us">About Us</a></li>
+                        <li><a href="https://vehicle-window-shading-services.pages.dev">Vehicle window shading services</a></li>
                     </ul>
                 </div>
-                <div class="social-links">
-                    <h3>Follow Us</h3>
-                    <div class="social-icons">
 
-                        <a href="https://www.instagram.com/prestigeprotectivefilm/"><i data-lucide="instagram"></i></a>
-                        <a href="https://www.youtube.com/@fahadhalig"><i data-lucide="youtube"></i></a>
+
+                <div class="quick-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#services">Car Window Tinting</a></li>
+                        <li><a href="#services">Ceramic Coating</a></li>
+                        <li><a href="#services">Vinyl Wrapping</a></li>
+                        <li><a href="#services">Wheel Powder Coating</a></li>
+                        <li><a href="#services">Paint Protection Film</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3></h3>
+                    <div >
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11740.29093523314!2d-83.334891!3d42.638618!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824dd93cd6243c9%3A0x87e737c00c3875b7!2sPrestige%20Protective%20Films!5e0!3m2!1sen!2sus!4v1738392093095!5m2!1sen!2sus" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">window tinting</iframe>
                     </div>
                 </div>
                 
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Auto glass tinting solutions All rights reserved.</p>
+                <p>&copy; 2025 Auto glass tinting solutions in Waterford Township All rights reserved.</p>
+               
+                   
+                   
             </div>
+          
+     
         </div>
 
 </footer>
-
 <script>
     // Initialize Lucide icons
     lucide.createIcons();
